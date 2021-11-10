@@ -30,3 +30,9 @@ Route::put('/animals/{id}', [AnimalController::class, 'update']);
 
 # method delete
 Route::delete('/animals/{id}', [AnimalController::class, 'destroy']);
+
+# Method GET, route /students
+Route::get('/students', [StudentController::class, 'index']);
+
+# Method POST, route /students
+Route::post('/students', [StudentController::class, 'store']);
